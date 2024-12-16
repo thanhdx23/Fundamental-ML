@@ -1,34 +1,52 @@
-# Mini-Project for Fundamentals of Machine Learning Course
-![background](./materials/ai_wp.jpg)
-This repository contains the code and data for a mini-project on facial expression recognition using machine learning algorithms.
+# Face Detection and Emotion Recognition Using Deep Learning
 
-.
+## 🚀 Overview  
+This project focuses on building a **Deep Learning-based system** capable of:  
 
-## 📦 Project Structure
+- Detecting human faces in images.  
+- Classifying emotions into 7 categories:  
+  - Angry  
+  - Disgust  
+  - Fear  
+  - Happy  
+  - Sad  
+  - Surprise  
+  - Neutral  
 
-The repository is organized into the following directories:
+The system integrates advanced computer vision techniques and emotion recognition models to deliver accurate and efficient results.
 
-- **/data**: This directory contains the facial expression dataset. You'll need to download the dataset and place it here before running the notebooks. (Download link provided below)
-- **/notebooks**: This directory contains the Jupyter notebook ```EDA.ipynb```. This notebook guides you through exploratory data analysis (EDA) and classification tasks.
+---
 
-## ⚙️ Usage
+## 🧠 Objective  
+The goal was to develop a robust pipeline for **face detection** and **emotion recognition** leveraging state-of-the-art deep learning techniques.
 
-This project is designed to be completed in the following steps:
+---
 
-1. **Fork the Project**: Click on the ```Fork``` button on the top right corner of this repository, this will create a copy of the repository in your own GitHub account. Complete the table at the top by entering your team member names.
+## 🔧 Features  
+- **Face Detection**: Utilized **Faster R-CNN** for detecting faces and extracting bounding boxes.  
+- **Emotion Recognition**: Implemented a **TensorFlow/Keras-based emotion classifier** trained on preprocessed facial images.  
+- **Preprocessing Steps**: Included resizing, normalization, and confidence threshold tuning to enhance model performance.  
 
-2. **Download the Dataset**: Download the facial expression dataset from the following [link](https://mega.nz/file/foM2wDaa#GPGyspdUB2WV-fATL-ZvYj3i4FqgbVKyct413gxg3rE) and place it in the **/data** directory:
+---
 
-3. **Complete the Tasks**: Open the ```notebooks/EDA.ipynb``` notebook in your Jupyter Notebook environment. The notebook is designed to guide you through various tasks, including:
-    
-    1. Prerequisite
-    2. Principle Component Analysis
-    3. Image Classification
-    4. Evaluating Classification Performance 
+## 📊 Results  
+- Achieved precise face detection and emotion classification.  
+- Obtained **59% validation accuracy** for the emotion classification model.  
 
-    Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
+---
 
-5. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push them to your forked repository on GitHub.
+## 🛠️ Techniques & Models  
+### 1. Face Detection  
+- **Framework**: Faster R-CNN.  
+- **Output**: Bounding boxes for faces in the input images.  
 
+### 2. Emotion Classification  
+- **Framework**: TensorFlow/Keras.  
+- **Preprocessing**:  
+  - Resized images to ensure uniform input dimensions.  
+  - Normalized pixel values for faster convergence.  
+- **Model Architecture**: Fine-tuned deep learning model for emotion classification.  
 
-Feel free to modify and extend the notebook to explore further aspects of the data and experiment with different algorithms. Good luck.
+### 3. Optimization  
+- Tuned confidence thresholds to balance precision and recall.  
+- Applied early stopping and learning rate scheduling during training.
